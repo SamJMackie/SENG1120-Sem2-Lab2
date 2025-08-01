@@ -1,4 +1,4 @@
-public class Circle implements Shape {
+public class Circle extends AbstractShape {
    
     int radius;
 
@@ -6,6 +6,11 @@ public class Circle implements Shape {
         this.radius = r;
     }
 
+    @Override
+    public String getName(){
+        return "Circle";
+    }
+    
     @Override
     public double area(){
         return Math.PI * radius * radius;

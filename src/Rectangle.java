@@ -1,4 +1,4 @@
-public class Rectangle implements Shape{
+public class Rectangle extends AbstractShape {
     
     int height;
     int width;
@@ -6,6 +6,11 @@ public class Rectangle implements Shape{
     public Rectangle(int h, int w){
         this.height = h;
         this.width = w;
+    }
+
+    @Override
+    public String getName(){
+        return "Rectangle";
     }
 
     @Override
